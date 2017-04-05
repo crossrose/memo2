@@ -5,9 +5,10 @@
     $memo1 = new memo(1,"제목","등록자","passwd","memos","URLS");
     $memos = new memos;
 
-    echo "test2";
-    exit;
     $memos->add($memo1);
+    echo "ㅅㄷㄴㅅ";
+    print_r($memo1);
+    exit;
 
     $iterator = $memos->getIterator();
 
