@@ -8,6 +8,13 @@
         private $write_date;
         private $idx;
 
+        public function __constructor($title,$user,$passwd,$memos,$url) {
+            $this->setPasswd($passwd);
+            $this->setTitle($title);
+            $this->setUrl($url);
+            $this->setMemo($memo);
+        }
+
         public function setId($id) {
             $this->idx = $id;
         }
@@ -48,11 +55,20 @@
             return $this->title;
         }
 
-        public function new_memo() {
+        public function setMemo($memo){
+            $this->memo = $memo;
+        }
+
+        public function getMemo(){
+            return $this->memo;
+        }
+
+        // 여기부터는 기능
+        public function write_memo() {
 
         }
 
-        public function del_memo() {
+        public function delete_memo() {
 
         }
 
