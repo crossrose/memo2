@@ -12,7 +12,7 @@
         *
         *
         */
-        public function __constructor($id,$title,$user,$passwd,$memos,$url) {
+        public function __construct($id,$title,$user,$passwd,$memos,$url) {
             $this->setId($id);
             $this->setPasswd($passwd);
             $this->setTitle($title);
