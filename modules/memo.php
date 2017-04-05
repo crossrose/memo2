@@ -8,7 +8,12 @@
         private $write_date;
         private $idx;
 
-        public function __constructor($title,$user,$passwd,$memos,$url) {
+        /*
+        *
+        *
+        */
+        public function __constructor($id,$title,$user,$passwd,$memos,$url) {
+            $this->setId($id);
             $this->setPasswd($passwd);
             $this->setTitle($title);
             $this->setUrl($url);
