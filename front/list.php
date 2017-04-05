@@ -11,11 +11,9 @@
     $iterator = $memos->getIterator();
 
     foreach ($iterator as $memo) {
-        print $memo->getId(). " ";
-        print $memo->getTitle(). " ";
-        print $memo->getUser(). " ";
-
-        # code...
+        echo $memo->getId(). " ";
+        echo $memo->getTitle(). " ";
+        echo $memo->getUser(). " ";
     }
 
 ?>
