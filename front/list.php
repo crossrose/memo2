@@ -14,7 +14,7 @@
         print $memo->getId(). " ";
         print $memo->getTitle(). " ";
         print $memo->getUser(). " ";
-        
+
         # code...
     }
 
