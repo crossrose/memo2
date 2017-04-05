@@ -8,10 +8,6 @@
         private $write_date;
         private $idx;
 
-        /*
-        *
-        *
-        */
         public function __construct($id,$title,$user,$passwd,$memos,$url) {
             $this->setId($id);
             $this->setPasswd($passwd);
@@ -70,7 +66,8 @@
 
         // 여기부터는 기능
         public function write_memo() {
-
+            $pdo = new PDO('mysql:host=localhost;dbname=db_memo;charset=urf8','memo_user','memo!@#$');
+            $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
         }
 
         public function delete_memo() {
