@@ -6,12 +6,11 @@
     $memos = new memos;
 
     $memos->add($memo1);
-    echo "ㅅㄷㄴㅅ";
-    print_r($memo1);
-    exit;
 
     $iterator = $memos->getIterator();
-
+    echo "test4";
+    print_r($iterator);
+    exit;
     foreach ($iterator as $memo) {
         echo $memo->getId(). " ";
         echo $memo->getTitle(). " ";
