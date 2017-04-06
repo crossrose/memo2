@@ -18,8 +18,6 @@
      die('오류:'.$exception->getMessage());
 
  }
- print_r($_POST);
-
  try{
      $pdo->beginTransaction();
      $sql = "INSERT INTO memo2 (title,name,passwd,memo,memo_link_url) value (? ,? ,? ,?,?)";
