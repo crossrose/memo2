@@ -68,7 +68,7 @@
         public function write_memo() {
             try{
                 $pdo = new PDO('mysql:host=localhost;dbname=db_memo;charset=urf8','memo_user','memo!@#$');
-                $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+                $pdo->setAttribute(PDO::ATTR_ERRMDE,PDO::ERRMODE_EXCEPTION);
                 $pdo->serAttribute(PDO::ATTR_EMULATE_PREPARES,false);
                 echo "접속하였습니다.";
             }catch(PDOException $exception) {
