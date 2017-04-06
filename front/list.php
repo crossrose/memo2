@@ -18,4 +18,6 @@
 
     }
 
+    $memo->write_memo(); 
+
 ?>
