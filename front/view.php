@@ -6,7 +6,6 @@
  $database_charset  = "utf8";
  $database_user     = "memo_user";
  $database_passwd   = "memo!@#$";
- $pdo;
 
  $dsn ="mysql:host=$database_host;dbname=$database_name;charset=$database_charset";
  try{
@@ -18,6 +17,7 @@
      die('오류:'.$exception->getMessage());
 
  }
+
  try{
      $pdo->beginTransaction();
      $sql = "INSERT INTO memo2 (title,name,passwd,memo,memo_link_url) value (? ,? ,? ,?,?)";
