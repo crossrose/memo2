@@ -66,14 +66,18 @@
 
         // 여기부터는 기능
         public function write_memo() {
-            try{
-                 $pdo = new PDO('mysql:host=localhost;dbname=db_memo;charset=utf8','memo_user','memo!@#$');
-                 $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-                 $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES,false);
-                    echo "접속하였습니다.";
-                }catch(PDOException $exception) {
-                    die('접속오류 :'.$exception->getMessage());
-                }
+            // try{
+            //     $pdo = new PDO('mysql:host=localhost;dbname=db_memo;charset=utf8','memo_user','memo!@#$');
+            //     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+            //     $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES,false);
+            //     echo "접속하였습니다.";
+            //     $pdo->close();
+            // }catch(PDOException $exception) {
+            //     die('접속오류 :'.$exception->getMessage());
+            // }
+            // memo 입력값확인
+            // memo 변수 값 DB 처리에 전달
+
         }
 
         public function delete_memo() {
