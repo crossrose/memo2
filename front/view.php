@@ -30,6 +30,7 @@
      $shtm->bindValue(4,$_POST['memo_text'],PDO::PARAM_STR);
      $shtm->bindValue(5,$_POST['memo_link_url'],PDO::PARAM_STR);
      $shtm->execute();
+     $pdo->commit();
      print("성공하였습니다.");
  }catch (PDOException $exception) {
      $pdo->rollBack();
