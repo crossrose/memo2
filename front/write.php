@@ -8,7 +8,7 @@
         <table>
   			<tr>
   				<td><label>제목</label></td>
-  				<td><input type="text" id="memo_title" name="memo_title" value="<?=$title?>"/></td>
+  				<td><input type="text" id="memo_title" name="memo_title" /></td>
   			</tr>
   			<tr>
   				<td><label>메모내용</label></td>
@@ -16,7 +16,7 @@
   			</tr>
   			<tr>
   				<td><label>작성자</label></td>
-  				<td><input type="text" id="memo_name" name="memo_name" value="<?=$name?>"/></td>
+  				<td><input type="text" id="memo_name" name="memo_name"/></td>
   			</tr>
   			<tr>
   				<td><label>비밀번호</label></td>
@@ -24,11 +24,11 @@
   			</tr>
   			<tr>
   				<td><label>연결 URL</label></td>
-  				<td><input type="text" id="memo_link_url" name="memo_link_url" value="<?=$memo_link_url?>"/></td>
+  				<td><input type="text" id="memo_link_url" name="memo_link_url" /></td>
   			</tr>
   			<tr>
-  				<td><input type="submit" value="<?=$button_value?>" /></td>
-  				<td><input type="button" value="취소" onclick="cancel(<?=$wherefrom?>,<?=$idx?>);" /></td>
+  				<td><input type="submit" value="등록" /></td>
+                <td></td>
   			</tr>
   		</table>
 

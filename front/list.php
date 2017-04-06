@@ -18,6 +18,7 @@
 
     }
 
-    $memo->write_memo(); 
+    $memo->write_memo();
+    
 
 ?>
