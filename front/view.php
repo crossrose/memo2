@@ -28,7 +28,7 @@
      $shtm->bindValue(2,$_POST['memo_name'],PDO::PARAM_STR);
      $shtm->bindValue(3,$_POST['memo_passwd'],PDO::PARAM_STR);
      $shtm->bindValue(4,$_POST['memo_text'],PDO::PARAM_STR);
-     $shtm->bindValue(5,$_POST['memo_link_url'],PDO::PARMA_STR);
+     $shtm->bindValue(5,$_POST['memo_link_url'],PDO::PARAM_STR);
      $shtm->execute();
      print("성공하였습니다.");
  }catch (PDOException $exception) {
