@@ -2,6 +2,7 @@
 
     class memos implements IteratorAggregate {
         private $memos = [];
+
         public function add(memo $memo) {
             $this->memos[] = $memo;
         }
