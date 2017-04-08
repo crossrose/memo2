@@ -15,7 +15,7 @@
         echo $memo->getTitle(). " ";
         echo $memo->getUser(). " ";
         echo $memo->getPasswd();
-        echo $memo->getPasswd();
+        
 
     }
 
