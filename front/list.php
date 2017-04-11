@@ -24,7 +24,7 @@
 
   $search_key = '%'.$_POST['search_key'].'%';
   try {
-    $sql = "SELECT * FROM memo WHERE user like :user_name ";
+    $sql = "SELECT * FROM memo WHERE name like :user_name ";
     $stmh = $pdo->prepare($sql);
     $stmh->bindValue(':user_name',$search_key,PDO::PARAM_STR);
     $stmh->execute();
