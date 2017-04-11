@@ -52,5 +52,6 @@
         <td align="center"><?=htmlspecialchars($row['name'])?></td>
       </tr>
     <? } ?>
+<? } ?>>
 </body>
 </html>
