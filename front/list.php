@@ -26,7 +26,7 @@
   try {
     $sql = "SELECT * FROM memo WHERE user like :user_name ";
     $stmh = $pdo->prepare($sql);
-    $stmh->bindValue(':user_name',$search_key,PDO:PARAM_STR);
+    $stmh->bindValue(':user_name',$search_key,PDO::PARAM_STR);
     $stmh->execute();
     $count = $stmh->rowCount();
     echo "검색 결과는 ".$count." 건 입니다. <BR>";
